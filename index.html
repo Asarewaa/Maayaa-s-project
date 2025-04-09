@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ's wigs.html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+            ul{
+                list-style-type:none; 
+                margin:10px;
+            border:10px;
+            float: right;
+        }
+            li{
+                display: inline;
+            }
+
+            li{
+                float: left;
+            }
+
+            li{ display:block;
+                padding: 10px;
+                background-color:white;
+            }
+
+            a{
+              text-decoration: none; 
+              color: red; 
+            }
+            h1{
+                position: absolute;
+                left:2%;
+                color: black;
+            }
+            h4{
+                position: absolute;
+                top: 20%;
+                margin:60px 500px
+            }
+            body{
+                width: 100%;
+                height: 110%;
+                background-image: url(eafb2c63b7ad0c4506b184bce1f6ba61.jpg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                 background-position:center -40px;
+                 font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+                
+            }
+            .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(252, 252, 203);
+    padding: 10px 20px;
+}
+.navbar .logo a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.search-container button:hover {
+    background-color: #555;
+}
+                
+        .box{
+            width: 500px;
+            height: 150px;
+            background-color: pink;
+            position: absolute;
+            top: 50%;
+            left: 90px;
+            right: 10px;
+            padding-left: 10px;
+            transform: translateY(100%);
+            animation: slidein 3s ease-in-out;
+           }
+            /*unvisited link*/
+            a:link{
+             color: blueviolet;
+           }
+           /*visited link*/
+           a:visited{
+            color: brown;
+           }
+           /*mouseoverlink*/
+           a:hover{
+            color: red;
+           }
+           /*selected link*/
+           a:active{
+            color: hotpink;
+           }
+        .slides{
+            position:relative;
+            width: 500px;/*adjust the width*/
+            height: 350px;/*adjust the height*/
+            /* margin:170px 200px; */
+            transform: translate(60%,60%);
+        }
+        .slide{
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(243, 243, 166);/*adjust background color*/
+            animation: slide 10s infinite;
+            margin-left: 100px;
+        }
+        .slide:nth-child(1){
+            background-image:url(6e73d82b6455a4a13acaf0344a4b9a9c.jpg);
+            background-size:cover;
+            margin-left: 100px;
+        }
+        
+        .slide:nth-child(2){
+            background-image:url(e73912f17cf86cb2c849a6082ea1f3fa.jpg);
+            background-size:cover;
+            margin-left: 100px;
+            animation-delay:2s
+        }
+        .slide:nth-child(3){
+            background-image:url(c982e48b1b5594d236e76ac134a43cdb.jpg);
+            background-size:cover;
+            margin-left: 100px;
+            animation-delay:4s
+        }
+        .slide:nth-child(4){
+            background-image:url(3bac3d07766010a0aee7be814ec71ef0.jpg);
+            background-size:cover;
+            margin-left: 100px;
+            animation-delay:5s;
+        }      
+        @keyframes slide{
+            0%{
+                opacity:0;
+                transform:translateX(0);
+            }
+            10%{
+                opacity: 1;
+                transform: translateX(0)
+            }
+            40%{
+                opacity:0;
+                transform: translateX(-100%)
+            }
+            100%{
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            40%{
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+        }
+        .container{
+            float: right;
+            padding: 5px 10px;
+            margin-top: -3px;
+            margin-right: 16px;
+            background: fixed;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            transform: translate(50% 80%);
+            display: flex;
+        }
+        .container input[type=text]{
+            text-align: left;
+            display: flex;
+            float: none;
+            width: 50%;
+            padding: 10px;
+            margin: 0;
+            border: 1px solid burlywood;
+
+        }
+        #site-footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+            border-radius: 50px;
+        }
+        #site-footer a{
+            margin-right: 20px;
+            transition: transform 0.2s ease-in-out;
+            
+        }
+        #site-footera:hover{
+            transform:scale(1.2)
+        }
+        .copyright-section{
+            margin-top: 20px;
+            font-size: 14px;
+            color: #444;
+            text-align: center;
+        }
+        .copyright-section span{
+            font-weight: bold;
+        }
+       footer{
+        margin: 0;
+        width: 100%;
+        height:10vh;
+        padding-left: 20px;
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+        background-color: aquamarine;
+       }
+footer p{
+    margin-bottom: 10px
+}
+footer a{
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a><i class="fa-solid fa-house"></i></li>
+        <li><a href="MJ's wigs.html">Shop</a><i class="fa-solid fa-cart-shopping"></i></li>
+        <li><a href="about.html">About</a><i class="fa-regular fa-address-card"></i></li>
+        <li><a href="contact info.html">Contact</a><i class="fa-solid fa-phone"></i></li>
+    </ul>
+    <div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Quality, Affordability & Luxury</a>
+            </div>
+            <form class="search-container" action="#" method="GET">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </nav>
+    <h4>Best In Human & Blend Hair</h4>
+    <div class="slides">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+    <footer>
+        <div id="site-footer">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-snapchat"></i> 
+        </div>
+        <p class="copyright-section">&copy; 2025 <span>MJ's Wigs</span> Designed by<span>Maya</span>. All rights reserved.</p>
+        
+    </footer>
+</body>
+</html>

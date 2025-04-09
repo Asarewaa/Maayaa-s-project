@@ -1,0 +1,472 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            h1{
+                margin-left: 70px;
+            }
+            table
+            {font-family: Georgia, 'Times New Roman', Times, serif;
+            border-collapse: collapse;
+            width:60%;
+            height: 50%;
+            margin-left: 50px;
+            margin-right: 10px;
+            }
+            th,td{border: 1px solid; 
+                text-align:center;
+                padding: 8px;
+            }
+            tr:nth-child(even){
+                background-color:whitesmoke;
+            }
+            body{
+                background-image: url(16a6fa550201eca5782a4b9ea844df11.jpg);
+                background-size: cover;
+            }
+           @keyframes slidein{
+            from{
+                left: -120px;
+            }
+            to{
+                left: 50px;
+            }
+           }
+           .box{
+            width: 500px;
+            height: 150px;
+            background-color: pink;
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            right: 10px;
+            padding-left: 10px;
+            transform: translateY(320%);
+            animation: slidein 3s ease-in-out;
+           }
+           form{
+            display: flex;
+            flex-direction: column;
+            padding-left: 500px;
+           }
+           fieldset{
+            margin-bottom: 10px;
+            width: 300px;
+            right: 40%;
+           }
+           label{
+            margin: 10px 0 5px;
+            color: blueviolet;
+           }
+           input{
+            padding: 10px;
+            border: 1px solid hotpink;
+            border-radius: 5px;
+            margin-bottom: 5px;
+           }
+           #submit{
+            margin-left:120px;
+            margin-right: 100px;
+            background-color: plum;
+            color: purple;
+            border: 1px solid black;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100px;
+           }
+           button:hover{
+            background-color: beige;
+           }
+           
+           fieldset label{
+            display: inline-block;
+            margin-right: 10px;
+           }
+           legend{
+            color: rgb(185, 14, 185);
+            text-align: center;
+           }
+           fieldset input{
+            display: inline-block;
+            margin-right: 10px;
+           }
+
+
+           
+
+           form{
+            display: flex;
+            flex-direction: column;
+            padding-left: 500px;
+            padding-top: 120px;
+           }
+           fieldset{
+            margin-bottom: 10px;
+            width: 300px;
+            right: 40%;
+           }
+           label{
+            margin: 10px 0 5px;
+            color: rgb(241, 241, 30);
+           }
+           input{
+            padding: 10px;
+            border: 1px solid rgb(233, 185, 122);
+            border-radius: 5px;
+            margin-bottom: 5px;
+           }
+           #submit{
+            margin-left:120px;
+            margin-right: 100px;
+            background-color: plum;
+            color: purple;
+            border: 1px solid black;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100px;
+           }
+           button:hover{
+            background-color: beige;
+           }
+           
+           fieldset label{
+            display: inline-block;
+            margin-right: 10px;
+           }
+           legend{
+            color: rgb(51, 5, 5);
+            text-align: center;
+           }
+           fieldset input{
+            display: inline-block;
+            margin-right: 10px;
+            padding-block: 10px;
+           }
+           
+    
+           
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+             <legend>PERSONAL INFO</legend>
+             <div>
+             </div>
+             <label> First name </label> 
+             <input type="text" placeholder="Enter your first name">
+             <div>
+             </div>
+                <label> Surname</label>
+                <input type="text" placeholder="Enter your surname">
+                <div>
+                </div>
+                    <label> Gender</label>
+                    <input type="text" placeholder="Specify whether M/F">
+                    <div>
+                    </div>
+                        <label>Date of Birth</label>
+                        <input type="date" >
+                        <div>
+                        </div>
+                            <label>Age</label>
+                            <input type="number">
+                            <div>
+                            </div>
+                    <label>Residence</label>
+                    <input type="text">
+                    <div>
+                    </div>
+                    <label>Ocupation</label>
+                    <input type="text">
+                    <div>
+                    </div>
+                    <button id="submit">Submit</button>
+            </fieldset>
+        </form>
+            <h1>HTML TABLE</h1>
+            <table>
+                <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                </tr>
+                <tr>
+                    <th>Tomato Paste</th>
+                    <th>2 cartons</th>
+                    <th>500 cedis</th>
+                </tr>
+                <tr>
+                    <th>Milk</th>
+                    <th>5 pieces</th>
+                    <th>100 cedis</th>
+                </tr>
+                <tr>
+                <th>Oreo biscuits</th>
+                <th>9 boxes</th>
+                <th>1000 cedis</th>
+                </tr>
+            </table>
+       
+        <div class="box">
+      <p> <b>Transform your look with Premium Wigs!</b> 
+        <br>
+        Discover high-quality,stylish, and natural looking wigs designed for every occasion.
+        Whether you're looking for a bold new style or a natural everyday look, we've got you covered.
+        Shop now and embrace confidence with every strand!</p>
+        <button> Shop now/ Explore our collection</button>
+        </div>
+      
+
+        <form>
+    <fieldset>
+     <legend>PERSONAL INFO</legend>
+     <div>
+     </div>
+     <label> First name </label>
+     <br> 
+     <input type="text" placeholder="Enter your first name">
+     <div>
+     </div>
+        <label> Surname</label>
+        <br>
+        <input type="text" placeholder="Enter your surname">
+        <div>
+        </div>
+            <label> Gender</label>
+            <br>
+            <input type="text" placeholder="Specify whether M/F">
+            <div>
+            </div>
+                <label>Date of Birth</label>
+                <br>
+                <input type="date" >
+                <div>
+                </div>
+                    <label>Age</label>
+                    <br>
+                    <input type="number">
+                    <div>
+                    </div>
+            <label>Residence</label>
+            <br>
+            <input type="text">
+            <div>
+            </div>
+            <label>Ocupation</label>
+            <br>
+            <input type="text">
+            <div>
+            </div>
+            <button id="submit">Submit</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery with Sidebar</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery a img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery a img:hover {
+  transform: scale(1.05);
+}
+
+.viewer {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.viewer:target {
+  display: grid;
+}
+
+.main-image {
+  padding: 40px;
+}
+
+.main-image img {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.sidebar {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.quantity-control button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  background: #ddd;
+  cursor: not-allowed;
+  border-radius: 4px;
+}
+
+.quantity-control span {
+  font-size: 18px;
+}
+
+.sidebar button.action {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.add-to-cart {
+  background: #ffa500;
+  color: white;
+}
+
+.buy-now {
+  background: #28a745;
+  color: white;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #333;
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.close-btn:hover {
+  background: #ccc;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <a href="7728e8fa5727c375cf1e39ba79bc1331.jpg"><img src="7728e8fa5727c375cf1e39ba79bc1331.jpg" alt="Image 1"></a>
+    <a href="7728e8fa5727c375cf1e39ba79bc1331.jpg"><img src="7728e8fa5727c375cf1e39ba79bc1331.jpg" alt="Image 2"></a>
+  </div>
+
+  <!-- Image Viewer 1 -->
+  <div id="img1" class="viewer">
+    <a href="#" class="close-btn"></a>
+    <div class="main-image">
+      <img src="7728e8fa5727c375cf1e39ba79bc1331.jpg" alt="Image 1 Large">
+    </div>
+    <div class="sidebar">
+      <h2>Braidal hair 
+        $200
+      </h2>
+      <div class="quantity-control">
+        <button disabled>-</button>
+        <span>1</span>
+        <button disabled>+</button>
+      </div>
+      <button class="action add-to-cart">Add to Cart</button>
+      <button class="action buy-now">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Image Viewer 2 -->
+  <div id="img2" class="viewer">
+    <a href="#" class="close-btn"></a>
+    <div class="main-image">
+      <img src="7728e8fa5727c375cf1e39ba79bc1331.jpg" alt="Image 2 Large">
+    </div>
+    <div class="sidebar">
+      <h2>Bridal hair 
+        $200
+      </h2>
+      <div class="quantity-control">
+        <button disabled>-</button>
+        <span>1</span>
+        <button disabled>+</button>
+      </div>
+      <button class="action add-to-cart">Add to Cart</button>
+      <button class="action buy-now">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+div.gallery{
+    margin: 5px;
+    border: 1px solid brown;
+    float: left;
+    width:180px;
+    height: 50h;
+   }
+   div.gallery:hover{
+    border: 2px solid blueviolet;
+   }
+   div.gallery img{
+    width: 100%;
+    height: auto;
+   }
+   div.desc{
+    padding: 20px;
+    text-align: center;
+    background-color: aliceblue;
+   }   

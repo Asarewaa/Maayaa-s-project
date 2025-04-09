@@ -1,0 +1,35 @@
+h1{
+    color: red;
+     font-size: 80px;
+     font-family: sans-serif;
+     font-style: italic;
+}
+    
+li{ color:rgb(55, 228, 78);
+     font-size:30px;
+     font-style: normal;
+}
+
+ol{list-style-type: lower-greek;
+
+}
+form{
+    align-content: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    
+}
+fieldset{
+    height: 200px;
+    width: 100px;
+    background-color: rgb(228, 236, 243);
+}
+legend{
+    text-align: center;
+}
+label{
+    text-align: center;
+    font-size: 15px;
+}
+
+ 

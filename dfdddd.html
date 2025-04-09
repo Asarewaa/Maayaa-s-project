@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Navigation Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gallery Layout */
+.gallery {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Image Item */
+.image-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Image Styling */
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hide the checkbox (used for toggling) */
+.image-toggle {
+    display: none;
+}
+
+/* Navigation Panel */
+.nav-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Show the panel and enlarge the image when checkbox is checked */
+.image-toggle:checked + .image-container .gallery-image {
+    transform: scale(1.1); /* Slightly zoom the image */
+}
+
+.image-toggle:checked + .image-container .nav-panel {
+    display: flex;
+}
+
+/* Styling for buttons and inputs */
+input[type="number"] {
+    padding: 5px;
+    width: 50px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+
+</head>
+<body>
+
+<div class="gallery">
+    <label class="image-item">
+        <input type="checkbox" class="image-toggle">
+        <div class="image-container">
+            <img src="7728e8fa5727c375cf1e39ba79bc1331.jpg" alt="Image 1" class="gallery-image">
+            <div class="nav-panel">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </label>
+    <label class="image-item">
+        <input type="checkbox" class="image-toggle">
+        <div class="image-container">
+            <img src="7728e8fa5727c375cf1e39ba79bc1331.jpg" alt="Image 2" class="gallery-image">
+            <div class="nav-panel">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </label>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+<div class="container">
+    <div class="gallery">
+        <a target="_blank" href="0cba1320b1dcbf6fa9fa29cc12f42967.jpg">
+        <img src="0cba1320b1dcbf6fa9fa29cc12f42967.jpg" alt="Clinque Terre" width="500px" height="600px">
+        </a>
+        <div class="desc">Frontal wavy human hair
+            900 cedis
+        </div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="8554b4f456b2a85242ad1b5226bb3491.jpg">
+        <img src="8554b4f456b2a85242ad1b5226bb3491.jpg" alt="Clinque Terre" width="500px" height="600px">
+        </a>
+        <div class="desc"> Tfrontal Human hair
+            790 cedis
+        </div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="422330affe2ea6062b12ed4717b8689a.jpg">
+        <img src="422330affe2ea6062b12ed4717b8689a.jpg" alt="Clinque Terre" width="500px" height="600px">
+        </a>
+        <div class="desc">Wet Curls Human hair
+            540 cedis
+        </div>
+    </div>
+    </div> 
+    <div class="gallery">
+        <a target="_blank" href="9e58e7cfcf8ecf5dba8f282d77f253e8.jpg">
+        <img src="9e58e7cfcf8ecf5dba8f282d77f253e8.jpg" alt="Clinque Terre" width="500px" height="600px">
+        </a>
+        <div class="desc">650 cedis </div>
+    </div>
+    </div> 
+    <div class="gallery">
+        <a target="_blank" href="7728e8fa5727c375cf1e39ba79bc1331.jpg">
+        <img src="7728e8fa5727c375cf1e39ba79bc1331.jpg" alt="Clinque Terre" width="500px" height="600px">
+        </a>
+        <div class="desc">340 cedis </div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="2531ccf1b34ea1f1ab5d31bc7baf1988.jpg">
+        <img src="2531ccf1b34ea1f1ab5d31bc7baf1988.jpg" alt="Clinque Terre" width="500px" height="600px">
+        </a>
+        <div class="desc">700 cedis </div>
+    </div>
+</body>
+</html>

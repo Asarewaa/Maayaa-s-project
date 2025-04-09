@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>CSS CARDS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        body{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(244 247 247);
+        }
+        .card{
+            background-color:rgb(243, 240, 240);
+            padding: 20px;
+            width: 200px;
+            border-radius: 12px;
+            box-shadow: 0 3px 4px rgb(190, 184, 184);
+             position: relative; 
+            text-align: center;
+        }
+        .dot{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 10px;
+            width: 10px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .question{
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .feedback-buttons{
+            display: flex;
+            justify-content: space-between; 
+            gap: 10px;
+        }
+        .button{
+            flex: 1;
+            padding: 10px;
+            background: #f1f1f1fd;
+            border-radius: 18px;
+            font-size: 14px;
+            cursor: pointer;
+           /* transition: background 0.3s;*/
+           outline: none;
+           border: 1px solid #b7adad;
+        }
+        .button:hover{
+            background: #e0e0e0;
+        }
+        .like{
+            color: black;
+        }
+        .dislike{
+            color: black;
+        }
+        span{
+            color:rgb(143, 142, 142);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="notification dot"></span>
+        <p class="question"> What did you think of this post?</p>
+        <div class="feedback-buttons">
+            <button class=" button like">
+                <span>123</span>  |  <i class="fa-regular fa-thumbs-up"></i>
+            </button>
+            <button class=" button dislike">
+                <i class="fa-regular fa-thumbs-down"></i>  |  <span>4</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
