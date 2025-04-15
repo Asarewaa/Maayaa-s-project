@@ -1,18 +1,16 @@
-<html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="styles.css">
-        <style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ's wigs.html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
             ul{
                 list-style-type:none; 
                 margin:10px;
             border:10px;
             float: right;
-
-
         }
             li{
                 display: inline;
@@ -32,12 +30,14 @@
               color: red; 
             }
             h1{
-                /* position: absolute;
-                left:2%; */
-                color:black;
-                
-        
-            
+                position: absolute;
+                left:2%;
+                color: black;
+            }
+            h4{
+                position: absolute;
+                top: 20%;
+                margin:60px 500px
             }
             body{
                 width: 100%;
@@ -52,120 +52,6 @@
   font-style: normal;
                 
             }
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-.viewer {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  z-index: 100;
-}
-
-.viewer:target {
-  display: block;
-}
-
-.viewer-content {
-  display: flex;
-  height: 100%;
-}
-
-.image-area {
-  flex: 2;
-  padding: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.image-area img {
-  max-width: 100%;
-  max-height: 90vh;
-  border-radius: 8px;
-}
-
-.sidebar {
-  flex: 1;
-  padding: 40px 20px;
-  background: #f9f9f9;
-  border-left: 1px solid #ccc;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.sidebar h2 {
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-
-.quantity-control {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}.quantity-control button {
-  padding: 5px 10px;
-  font-size: 16px;
-  background: #ddd;
-  border: none;
-  border-radius: 4px;
-  cursor: not-allowed; /* Visual only */
-}
-
-.quantity-control span {
-  font-size: 18px;
-}
-
-.sidebar .action {
-  padding: 12px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.add-to-cart {
-  background-color: #ffa500;
-  color: white;
-}buy-now {
-  background-color: #28a745;
-  color: white;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 24px;
-  background: #eee;
-  color: #333;
-  padding: 5px 12px;
-  border-radius: 4px;
-  text-decoration: none;
-}
-
-.close-btn:hover {
-  background: #ccc;
-}
             .navbar {
     display: flex;
     justify-content: space-between;
@@ -216,14 +102,8 @@ nav-links li {
 .search-container button:hover {
     background-color: #555;
 }
-            body{
-                width: 100%;
-                height: 100%;
-                background-image: url(eafb2c63b7ad0c4506b184bce1f6ba61.jpg);
-                background-size:cover;
-                background-repeat: no-repeat;
-}
-.box{
+                
+        .box{
             width: 500px;
             height: 150px;
             background-color: pink;
@@ -251,20 +131,70 @@ nav-links li {
            a:active{
             color: hotpink;
            }
-           .container{
-            position: absolute;
-            transform: translate(50%, 85%);
-           }
-             
-            @keyframes slidein{
-            from{
-                left: -120px;
+        .slides{
+            position:relative;
+            width: 500px;/*adjust the width*/
+            height: 350px;/*adjust the height*/
+            /* margin:170px 200px; */
+            transform: translate(60%,60%);
+        }
+        .slide{
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(243, 243, 166);/*adjust background color*/
+            animation: slide 10s infinite;
+            margin-left: 100px;
+        }
+        .slide:nth-child(1){
+            background-image:url(6e73d82b6455a4a13acaf0344a4b9a9c.jpg);
+            background-size:cover;
+            margin-left: 100px;
+        }
+        
+        .slide:nth-child(2){
+            background-image:url(e73912f17cf86cb2c849a6082ea1f3fa.jpg);
+            background-size:cover;
+            margin-left: 100px;
+            animation-delay:2s
+        }
+        .slide:nth-child(3){
+            background-image:url(c982e48b1b5594d236e76ac134a43cdb.jpg);
+            background-size:cover;
+            margin-left: 100px;
+            animation-delay:4s
+        }
+        .slide:nth-child(4){
+            background-image:url(3bac3d07766010a0aee7be814ec71ef0.jpg);
+            background-size:cover;
+            margin-left: 100px;
+            animation-delay:5s;
+        }      
+        @keyframes slide{
+            0%{
+                opacity:0;
+                transform:translateX(0);
             }
-            to{
-                left: 50px;
+            10%{
+                opacity: 1;
+                transform: translateX(0)
             }
-           }
-           .container{
+            40%{
+                opacity:0;
+                transform: translateX(-100%)
+            }
+            100%{
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            40%{
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+        }
+        .container{
             float: right;
             padding: 5px 10px;
             margin-top: -3px;
@@ -275,7 +205,6 @@ nav-links li {
             cursor: pointer;
             transform: translate(50% 80%);
             display: flex;
-
         }
         .container input[type=text]{
             text-align: left;
@@ -287,157 +216,81 @@ nav-links li {
             border: 1px solid burlywood;
 
         }
-    
-        </style>
-    </head>
-    <body>
-        <div class="nav"> 
+        #site-footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+            border-radius: 50px;
+        }
+        #site-footer a{
+            margin-right: 20px;
+            transition: transform 0.2s ease-in-out;
             
-            <ul>
-                <li><a href="index.html">Home</a><i class="fa-solid fa-house"></i></li>
-                <li></i><a href="MJ's wigs.html">Shop</a><i class="fa-solid fa-cart-shopping"></i></li>
-                <li><a href="about.html">About</a><i class="fa-regular fa-address-card"></i></li>   
-                <li><a href="contact info.html">Contact</a><i class="fa-solid fa-phone"></i></l>
-            </ul>
+        }
+        #site-footera:hover{
+            transform:scale(1.2)
+        }
+        .copyright-section{
+            margin-top: 20px;
+            font-size: 14px;
+            color: #444;
+            text-align: center;
+        }
+        .copyright-section span{
+            font-weight: bold;
+        }
+       footer{
+        margin: 0;
+        width: 100%;
+        height:10vh;
+        padding-left: 20px;
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+        background-color: aquamarine;
+       }
+footer p{
+    margin-bottom: 10px
+}
+footer a{
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a><i class="fa-solid fa-house"></i></li>
+        <li><a href="MJ's wigs.html">Shop</a><i class="fa-solid fa-cart-shopping"></i></li>
+        <li><a href="about.html">About</a><i class="fa-regular fa-address-card"></i></li>
+        <li><a href="contact info.html">Contact</a><i class="fa-solid fa-phone"></i></li>
+    </ul>
+    <div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Quality, Affordability & Luxury</a>
             </div>
-            <div>
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="#">Quality, Affordability & Luxury</a>
-                </div>
-                <form class="search-container" action="#" method="GET">
-                    <input type="text" placeholder="Search..." name="search">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </nav>
-            <div class="gallery">
-                <a href="#img1">
-                  <img src="2531ccf1b34ea1f1ab5d31bc7baf1988.jpg" alt="Image 1">
-                </a>
-                <a href="#img2">
-                  <img src="7728e8fa5727c375cf1e39ba79bc1331.jpg" alt="Image 2">
-                </a>
-                <a href="#img3">
-                    <img src="6e73d82b6455a4a13acaf0344a4b9a9c.jpg" alt="image 3">
-                </a>
-                <a href="#img4">
-                    <img src="9e58e7cfcf8ecf5dba8f282d77f253e8.jpg" alt="image 4">
-                </a>
-            </a>
-            <a href="#img5">
-                <img src="8554b4f456b2a85242ad1b5226bb3491.jpg" alt="image 5">
-            </a>
-            <a href="#img6">
-                <img src="0cba1320b1dcbf6fa9fa29cc12f42967.jpg" alt="image 6">
-            </a>
-              </div>
-            <div id="img1" class="viewer">
-                <a href="#" class="close-btn">×</a>
-                <div class="viewer-content">
-                  <div class="image-area">
-                    <img src="2531ccf1b34ea1f1ab5d31bc7baf1988.jpg" alt="Image 1 small">
-                  </div>
-                  <div class="sidebar">
-                    <h2>500 cedis</h2>
-                    <div class="quantity-control">
-                      <button disabled>-</button>
-                      <span>1</span>
-                      <button disabled>+</button>
-                    </div>
-                    <button class="action add-to-cart">Add to Cart</button>
-                    <button class="action buy-now">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            <div id="img2" class="viewer">
-                <a href="#" class="close-btn">×</a>
-                <div class="viewer-content">
-                  <div class="image-area">
-                    <img src="7728e8fa5727c375cf1e39ba79bc1331.jpg" alt="Image 2 small">
-                  </div>
-                  <div class="sidebar">
-                    <h2>Braidal human hair
-                        $200
-                    </h2>
-                    <div class="quantity-control">
-                      <button disabled>-</button>
-                      <span>1</span>
-                      <button disabled>+</button>
-                    </div>
-                    <button class="action add-to-cart">Add to Cart</button>
-                    <button class="action buy-now">Buy Now</button>
-                  </div>
-                  <div id="img3" class="viewer">
-                    <a href="#" class="close-btn">×</a>
-                    <div class="viewer-content">
-                      <div class="image-area">
-                        <img src="6e73d82b6455a4a13acaf0344a4b9a9c.jpg" alt="Image 3 small">
-                      </div>
-                      <div class="sidebar">
-                        <h2>500 cedis</h2>
-                        <div class="quantity-control">
-                          <button disabled>-</button>
-                          <span>1</span>
-                          <button disabled>+</button>
-                        </div>
-                        <button class="action add-to-cart">Add to Cart</button>
-                        <button class="action buy-now">Buy Now</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="img4" class="viewer">
-                    <a href="#" class="close-btn">×</a>
-                    <div class="viewer-content">
-                      <div class="image-area">
-                        <img src="9e58e7cfcf8ecf5dba8f282d77f253e8.jpg" alt="Image 4 small">
-                      </div>
-                      <div class="sidebar">
-                        <h2>500 cedis</h2>
-                        <div class="quantity-control">
-                          <button disabled>-</button>
-                          <span>1</span>
-                          <button disabled>+</button>
-                        </div>
-                        <button class="action add-to-cart">Add to Cart</button>
-                        <button class="action buy-now">Buy Now</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="img5" class="viewer">
-                    <a href="#" class="close-btn">×</a>
-                    <div class="viewer-content">
-                      <div class="image-area">
-                        <img src="8554b4f456b2a85242ad1b5226bb3491.jpg" alt="Image 5 small">
-                      </div>
-                      <div class="sidebar">
-                        <h2>500 cedis</h2>
-                        <div class="quantity-control">
-                          <button disabled>-</button>
-                          <span>1</span>
-                          <button disabled>+</button>
-                        </div>
-                        <button class="action add-to-cart">Add to Cart</button>
-                        <button class="action buy-now">Buy Now</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="img6" class="viewer">
-                    <a href="#" class="close-btn">×</a>
-                    <div class="viewer-content">
-                      <div class="image-area">
-                        <img src="0cba1320b1dcbf6fa9fa29cc12f42967.jpg" alt="Image 6 small">
-                      </div>
-                      <div class="sidebar">
-                        <h2>500 cedis</h2>
-                        <div class="quantity-control">
-                          <button disabled>-</button>
-                          <span>1</span>
-                          <button disabled>+</button>
-                        </div>
-                        <button class="action add-to-cart">Add to Cart</button>
-                        <button class="action buy-now">Buy Now</button>
-                      </div>
-                    </div>
-                  </div>
-    </body>
+            <form class="search-container" action="#" method="GET">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </nav>
+    <h4>Best In Human & Blend Hair</h4>
+    <div class="slides">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+    <footer>
+        <div id="site-footer">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-snapchat"></i> 
+        </div>
+        <p class="copyright-section">&copy; 2025 <span>MJ's Wigs</span> Designed by<span>Maya</span>. All rights reserved.</p>
+        
+    </footer>
+</body>
 </html>

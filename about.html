@@ -9,40 +9,10 @@
     <title>MJ's wigs</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
-            ul{
-                list-style-type:none; 
-                margin:10px;
-            border:10px;
-            float: right;
-        }
-            li{
-                display: inline;
-            }
-
-            li{
-                float: left;
-            }
-
-            li{ display:block;
-                padding: 10px;
-                background-color:white;
-            }
-
-            a{
-              text-decoration: none; 
-              color: red; 
-            }
-            h1{
-                position: absolute;
-                left:2%;
-            
-                
-        
-            
-            }
             body{
-                width: 100%;
-                height: 110%;
+                width: 90%;
+                height: 90%;
+                /* overflow-x: hidden;  */
                 background-image: url(eafb2c63b7ad0c4506b184bce1f6ba61.jpg);
                 background-size:cover;
                 background-repeat: no-repeat;
@@ -51,8 +21,29 @@
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-                
+  }
+  ul{
+                list-style-type:none; 
+                margin:10px;
+            border:10px;
+            float: right;
+        }
+        ul > li >  i{
+          color: blue;
+          margin-left: 7px;
+        }
+
+            li{
+                float: left;
+                padding: 10px;
+                background-color:white;
             }
+
+            a{
+              text-decoration: none; 
+              color: red; 
+            }
+            
             .navbar {
     display: flex;
     justify-content: space-between;
@@ -103,26 +94,7 @@ nav-links li {
 .search-container button:hover {
     background-color: #555;
 }
-            @keyframes slidein{
-            from{
-                left: -120px;
-            }
-            to{
-                left: 50px;
-            }
-           }
-           .box{
-            width: 500px;
-            height: 150px;
-            background-color: pink;
-            position: absolute;
-            top: 50%;
-            left: 90px;
-            right: 10px;
-            padding-left: 10px;
-            transform: translateY(100%);
-            animation: slidein 3s ease-in-out;
-           }
+           
            /*unvisited link*/
            a:link{
              color: blueviolet;
@@ -161,47 +133,73 @@ nav-links li {
             border: 1px solid burlywood;
 
         }
-        #site-footer{
-            justify-content: space-around;
-            align-items: center;
-            margin-bottom: 20px;
-            border-radius: 50px;
-        }
-        #site-footer a{
-            margin-right: 20px;
-            transition: transform 0.2s ease-in-out;
-            
-        }
-        #site-footera:hover{
-            transform:scale(1.2)
-        }
-        .copyright-section{
-            margin-top: 20px;
-            font-size: 14px;
-            color: #444;
-            text-align: center;
-        }
-        .copyright-section span{
-            font-weight: bold;
-        }
-        footer{
-        margin: 0;
-        width: 100%;
-        height:60vh;
-        padding-left: 20px;
-        padding-right: 0px;
-        padding-top: 20px;
-        padding-bottom: 10px;
+       .section {
+      padding: 60px 20px;
+      position: relative;
+    }
+    .section h1 {
+      font-size: 28px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+    .divider {
+      width: 90%;
+      height: 1px;
+      background-color: #aaa;
+      margin: 20px auto;
+    }
+    /* .images-container {
+      position: relative;
+      display: inline-block;
+      margin-top: 40px;
+     }  */
+    .img1, .img2 {
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .img1 {
+      width: 200px;
+      position: absolute;
+      top: 390px;
+      left: 350px;
+      right: 100px;
+      z-index: 2;
+    }
+    .img2 {
+      width: 300px;
+      position: relative;
+      z-index: 1;
+      top: 150px;
+      left: 450px;
+    }
+    .box{
+    width: 500px;
+    height: 400px;
+    background-color: beige;
+    position: absolute;
+    top: 50%;
+    left: 400px;
+    right: 10px;
+    padding-left: 10px;
+    transform: translateY(100%);
+    animation: slidein 3s ease-in-out;
+   }
+       #aboutinfo{
         text-align: center;
-        background-color: aquamarine;
        }
-footer p{
-    margin-bottom: 10px
-}
-footer a{
-    text-decoration: none;
-}
-        
+       footer{
+        background-color: aliceblue;
+        color:blue;
+        text-align: center;
+        margin-bottom: 0%;
+       padding: 20px;
+       position: absolute;
+       bottom: -100%;
+       width: 100%;
+       height: 40px;
+       }
         </style>
 </head>
 <body>
@@ -221,22 +219,40 @@ footer a{
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </nav>
-    <div class="box">
-        <p> <b>Transform your look with Premium Wigs!</b> 
+        <div class="section">
+            <div class="divider"></div>
+            <h1>BEHIND THE BRAND</h1>
+            <div class="divider"></div>
+        
+            <div class="images-container">
+              <img src="33ab22c0588c142f2306e101d1571f8b.jpg" alt="Woman holding product" class="img1">
+              <img src="5162dc38d0134670e136c40d85a9e61b.jpg" alt="Smiling woman with herbs" class="img2">
+            </div>
+          </div>
+          <div class="box">
+          <p id="about info">
+            Hi, thanks for stopping by!
+            Our brand began with a passion for beauty, confidence and self-expression. We saw a need for high-quality yet affordable wigs that help women
+            feel like their best selves every day without breaking the bank.
+          <h3>WHAT MAKES OUR WIG SPECIAL:</h3>
+          *100% Human Hair & Blend
           <br>
-          Discover high-quality,stylish, and natural looking wigs designed for every occasion.
-          Whether you're looking for a bold new style or a natural everyday look, we've got you covered.
-          Shop now and embrace confidence with every strand!</p>
-          <button> Shop now/ Explore our collection</button>
-          </div>
-          <div>
-            <footer>
-                <div id="site-footer">
-                    <a href="http://Wa.me/+233504820662" class="fa fa-whatsapp"></a>   
-                </div>
-                <p class="copyright-section">&copy; 2025 <span>MJ's Wigs</span> Designed by<span>Maya</span>. All rights reserved.</p>
-                
-            </footer>
-          </div>
+          * Natural look and feel
+          <br>
+          * Affordable luxury
+          <br>
+          * A wide range of styles and textures
+          <h3>OUR MISSION</h3>
+          Is to make every woman feel confident, beautiful, and empowered through
+          toptier wigs that don't compromise on quality or affordability.</p>
+         </div>
+          <footer>
+            <div id="site-footer">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-snapchat"></i> 
+            </div>
+            <p class="copyright-section">&copy; 2025 <span>MJ's Wigs</span> Designed by<span>Maya</span>. All rights reserved.</p>
+        </footer>
+          
 </body>
 </html>

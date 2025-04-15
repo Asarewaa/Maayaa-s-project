@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
       body{
-                width: 100%;
+                width: 90%;
+                height: 90%;
+                overflow-x: hidden;
                 background-image: url(eafb2c63b7ad0c4506b184bce1f6ba61.jpg);
                 background-size:cover;
                 background-repeat: no-repeat;
@@ -75,6 +77,101 @@
 .search-container button:hover {
     background-color: #555;
 }
+.gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .viewer {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 40px;
+      box-sizing: border-box;
+      z-index: 999;
+    }
+    .viewer:target {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    .viewer img {
+      max-width: 50%;
+      border-radius: 10px;
+    }
+    .panel {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .panel input[type="number"] {
+      width: 80px;
+      padding: 5px;
+    }
+    .panel button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .add {
+      background: #28a745;
+      color: white;
+    }
+
+    .buy {
+      background: #007bff;
+      color: white;
+    }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      text-decoration: none;
+      color: white;
+    }
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .viewer {
+        flex-direction: column;
+        text-align: center;
+      }
+      .viewer img {
+        max-width: 90%;
+      }
+    }
+    footer{
+        background-color: aliceblue;
+        color:blue;
+        text-align: center;
+        margin-bottom: 0%;
+       padding: 20px;
+       position: absolute;
+       bottom: -55%;
+       width: 100%;
+       height: 40px;
+       }
   </style>
 </head>
 <body>
@@ -98,6 +195,88 @@
           </form>
       </nav>
       </div>
+      <!-- Image Gallery -->
+  <div class="gallery">
+    <a href="#img1"><img src="2531ccf1b34ea1f1ab5d31bc7baf1988.jpg" alt= "Image 1"></a>
+    <a href="#img2"><img src="7728e8fa5727c375cf1e39ba79bc1331.jpg" alt="Image 2"></a>
+    <a href="#img3"><img src="6e73d82b6455a4a13acaf0344a4b9a9c.jpg" alt="Image 3"></a>
+    <a href="#img4"><img src="9e58e7cfcf8ecf5dba8f282d77f253e8.jpg" alt="Image 4"></a>
+    <a href="#img5"><img src="8554b4f456b2a85242ad1b5226bb3491.jpg" alt="Image 5"></a>
+    <a href="#img6"><img src="0cba1320b1dcbf6fa9fa29cc12f42967.jpg" alt="Image 6"></a>
+  </div>
 
+  <!-- Viewer Panels -->
+  <div id="img1" class="viewer">
+    <a href="#" class="close">&times;</a>
+    <img src="2531ccf1b34ea1f1ab5d31bc7baf1988.jpg" alt="Image 1">
+    <div class="panel">
+      <h2>700 Cedis</h2>
+      <label>Quantity: <input type="number" value="1" min="1"></label>
+      <button class="add">Add to Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+  <div id="img2" class="viewer">
+    <a href="#" class="close">&times;</a>
+    <img src="7728e8fa5727c375cf1e39ba79bc1331.jpg" alt="Image 2">
+    <div class="panel">
+      <h2>900 cedis</h2>
+      <label>Quantity: <input type="number" value="1" min="1"></label>
+      <button class="add">Add to Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+  <div id="img3" class="viewer">
+    <a href="#" class="close">&times;</a>
+    <img src="6e73d82b6455a4a13acaf0344a4b9a9c.jpg" alt="Image 3">
+    <div class="panel">
+      <h2>1200 cedis</h2>
+      <label>Quantity: <input type="number" value="1" min="1"></label>
+      <button class="add">Add to Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+  <div id="img4" class="viewer">
+    <a href="#" class="close">&times;</a>
+    <img src="9e58e7cfcf8ecf5dba8f282d77f253e8.jpg" alt="Image 4">
+    <div class="panel">
+      <h2>790 cedis</h2>
+      <label>Quantity: <input type="number" value="1" min="1"></label>
+      <button class="add">Add to Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+  <div id="img5" class="viewer">
+    <a href="#" class="close">&times;</a>
+    <img src="8554b4f456b2a85242ad1b5226bb3491.jpg" alt="Image 5">
+    <div class="panel">
+      <h2>1700 cedis</h2>
+      <label>Quantity: <input type="number" value="1" min="1"></label>
+      <button class="add">Add to Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+  <div id="img6" class="viewer">
+    <a href="#" class="close">&times;</a>
+    <img src="0cba1320b1dcbf6fa9fa29cc12f42967.jpg" alt="Image 6">
+    <div class="panel">
+      <h2>780 cedis</h2>
+      <label>Quantity: <input type="number" value="1" min="1"></label>
+      <button class="add">Add to Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+  <footer>
+    <div id="site-footer">
+        <i class="fa-brands fa-whatsapp"><a href="http://Wa.me/+233504820662"></a></i>
+        <i class="fa-brands fa-snapchat"><a href="https://www.snapchat.com/add/mayapainstil?share_id=RiSmtgNMN4M&locale=en-GB"></a></i> 
+    </div>
+    <p class="copyright-section">&copy; 2025 <span>MJ's Wigs</span> Designed by<span>Maya</span>. All rights reserved.</p>
+</footer>
 </body>
 </html>

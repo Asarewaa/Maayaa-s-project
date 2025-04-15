@@ -3,350 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MJ's wigs</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap" rel="stylesheet">
+    <title>Contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        ul{
-            list-style-type:none; 
-            margin:10px;
-        border:10px;
-        float: right;
-
-
-    }
+         body{
+                width: 90%;
+                height: 90%;
+                overflow-x: hidden;
+                background-image: url(eafb2c63b7ad0c4506b184bce1f6ba61.jpg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                 background-position:center -40px;
+                 font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+         }
+         ul{
+                list-style-type:none; 
+                margin:10px;
+            border:10px;
+            float: right;
+        }
+        ul > li >  i{
+          color: blue;
+          margin-left: 7px;
+        }
         li{
-            display: inline;
-        }
-
-        li{
-            float: left;
-        }
-
-        li{ display:block;
-            padding: 10px;
-            background-color:white;
-        }
-
-        a{
-          text-decoration: none; 
-          color: red; 
-        }
-        h1{
-            /* position: absolute;
-            left:2%; */
-            color:black;
-            
-    
-        
-        }
-        body{
-            width: 100%;
-            height: 110%;
-            background-image: url(eafb2c63b7ad0c4506b184bce1f6ba61.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-             background-position:center -40px;
-             font-family: "Playfair Display", serif;
-font-optical-sizing: auto;
-font-weight: 100;
-font-style: normal;
-            
-        }
-        .navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color:rgb(252, 252, 203);
-padding: 10px 20px;
+                float: left;
+                padding: 10px;
+                background-color:white;
+            }
+            a{
+              text-decoration: none; 
+              color: red; 
+            }
+            .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(252, 252, 203);
+    padding: 10px 20px;
 }
 .navbar .logo a {
-color: black;
-text-decoration: none;
-font-size: 24px;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
 }
-.nav-links {
-list-style-type: none;
-padding: 0;
-display: flex;
-}
-nav-links li {
-margin-left: 20px;
-}
-
-.nav-links a {
-color: white;
-text-decoration: none;
-}
-
 .search-container {
-display: flex;
+    display: flex;
 }
-
 .search-container input[type="text"] {
-padding: 5px;
-border: none;
-border-radius: 4px;
-width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
 }
-
 .search-container button {
-padding: 5px 10px;
-border: none;
-background-color: #444;
-color: white;
-cursor: pointer;
-border-radius: 4px;
-margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
 }
-
 .search-container button:hover {
-background-color: #555;
+    background-color: #555;
 }
-        body{
-            width: 100%;
-            height: 100%;
-            background-image: url(eafb2c63b7ad0c4506b184bce1f6ba61.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-}
-.box{
-        width: 500px;
-        height: 150px;
-        background-color: pink;
-        position: absolute;
-        top: 50%;
-        left: 90px;
-        right: 10px;
-        padding-left: 10px;
-        transform: translateY(100%);
-        animation: slidein 3s ease-in-out;
-       }
-        /*unvisited link*/
-        a:link{
-         color: blueviolet;
-       }
-       /*visited link*/
-       a:visited{
-        color: brown;
-       }
-       /*mouseoverlink*/
-       a:hover{
-        color: red;
-       }
-       /*selected link*/
-       a:active{
-        color: hotpink;
-       }
-       .container{
-        position: absolute;
-        transform: translate(50%, 85%);
-       }
-       div.gallery{
-        margin: 5px;
-        border: 1px solid red;
-        float: left;
-        width:180px;
-        height: 55vh;
-       }
-       div.gallery:hover{
-        border: 2px solid blueviolet;
-       }
-       div.gallery img{
-        width: 100%;
-        height: auto;
-       }
-       div.desc{
-        padding: 20px;
-        text-align: center;
+           footer{
         background-color: aliceblue;
-       }       
-        @keyframes slidein{
-        from{
-            left: -120px;
-        }
-        to{
-            left: 50px;
-        }
-       }
-       .container{
-        float: right;
-        padding: 5px 10px;
-        margin-top: -3px;
-        margin-right: 16px;
-        background: fixed;
-        font-size: 17px;
-        border: none;
-        cursor: pointer;
-        transform: translate(50% 80%);
-        display: flex;
-
-    }
-    .container input[type=text]{
-        text-align: left;
-        display: flex;
-        float: none;
-        width: 50%;
-        padding: 10px;
-        margin: 0;
-        border: 1px solid burlywood;
-
-    }
-    ul{
-           list-style-type:none; 
-           margin:10px;
-       border:10px;
-       float: right;
-   }
-       li{
-           display: inline;
-       }
-
-       li{
-           float: left;
-       }
-
-       li{ display:block;
-           padding: 10px;
-           background-color:white;
-       }
-
-       a{
-         text-decoration: none; 
-         color: red; 
-       }
-       h1{
-           position: absolute;
-           left:2%;
-       }
-    
-       body{
-           width: 100%;
-           height: 110%;
-           background-image: url(eafb2c63b7ad0c4506b184bce1f6ba61.jpg);
-           background-size:cover;
-           background-repeat: no-repeat;
-            background-position:center -40px;
-            font-family: "Playfair Display", serif;
-font-optical-sizing: auto;
-font-weight: 100;
-font-style: normal;
-           
-       }
-       @keyframes slidein{
-       from{
-           left: -120px;
-       }
-       to{
-           left: 50px;
-       }
-      }
-      .box{
-       width: 500px;
-       height: 150px;
-       background-color: pink;
+        color:blue;
+        text-align: center;
+        margin-bottom: 0%;
+       padding: 20px;
        position: absolute;
-       top: 50%;
-       left: 90px;
-       right: 10px;
-       padding-left: 10px;
-       transform: translateY(100%);
-       animation: slidein 3s ease-in-out;
-      }
-      /*unvisited link*/
-      a:link{
-        color: blueviolet;
-      }
-      /*visited link*/
-      a:visited{
-       color: brown;
-      }
-      /*mouseoverlink*/
-      a:hover{
-       color: red;
-      }
-      /*selected link*/
-      a:active{
-       color: hotpink;
-      }
-   
-      
-      .container{
-       float: right;
-       padding: 5px 10px;
-       margin-top: -3px;
-       margin-right: 16px;
-       background: fixed;
-       font-size: 17px;
-       border: none;
-       cursor: pointer;
-       transform: translate(50% 80%);
-       display: flex;
-   }
-   .container input[type=text]{
-       text-align: left;
-       display: flex;
-       float: none;
-       width: 50%;
-       padding: 10px;
-       margin: 0;
-       border: 1px solid burlywood;
-
-   }
-   .navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color:rgb(252, 252, 203);
-padding: 10px 20px;
-}
-.navbar .logo a {
-color: black;
-text-decoration: none;
-font-size: 24px;
-}
-.nav-links {
-list-style-type: none;
-padding: 0;
-display: flex;
-}
-nav-links li {
-margin-left: 20px;
-}
-.nav-links a {
-color: white;
-text-decoration: none;
-}
-.search-container {
-display: flex;
-}
-
-.search-container input[type="text"] {
-padding: 5px;
-border: none;
-border-radius: 4px;
-width: 200px;
-}
-
-.search-container button {
-padding: 5px 10px;
-border: none;
-background-color: #444;
-color: white;
-cursor: pointer;
-border-radius: 4px;
-margin-left: 5px;
-}
-.search-container button:hover {
-background-color: #555;
-}
-form{
+       bottom: -55%;
+       width: 100%;
+       height: 40px;
+       }
+       .intro{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        font-weight: 15;
+        color: white;
+       }
+      .contactform{
             display: flex;
-            flex-direction: column;
-            padding-left: 500px;
-            padding-top: 120px;
+            /* padding-left: 500px; */
+            padding :2px;
+            transform: translate(450px,100px);
+            width: 350px;
+            max-width: 500px;
+            background-color: white;
+            border-radius: 20px;
            }
            fieldset{
             margin-bottom: 10px;
@@ -376,7 +126,6 @@ form{
            button:hover{
             background-color: beige;
            }
-           
            fieldset label{
             display: inline-block;
             margin-right: 10px;
@@ -390,15 +139,22 @@ form{
             margin-right: 10px;
             padding-block: 10px;
            }
-           
-
+           .intro{
+            text-align: center;
+           }
     </style>
-    <body>
+</head>
+<body>
+    <div class="nav">    
         <ul>
-            <li><a href="index.html">Home</a><i class="fa-solid fa-house"></i></li>
+            <li>
+              <a href="index.html">Home</a><i class="fa-solid fa-house"></i></li>
             <li></i><a href="MJ's wigs.html">Shop</a><i class="fa-solid fa-cart-shopping"></i></li>
             <li><a href="about.html">About</a><i class="fa-regular fa-address-card"></i></li>   
-            <li><a href="contact info.html">Contact</a><i class="fa-solid fa-phone"></i></li>
+            <li><a href="contact info.html">Contact</a><i class="fa-solid fa-phone"></i></l>
+        </ul>
+        </div>
+        <div>
             <nav class="navbar">
                 <div class="logo">
                     <a href="#">Quality, Affordability & Luxury</a>
@@ -408,50 +164,49 @@ form{
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </nav>
-            <form>
+            </div>
+            <p class="intro">For all order support, kindly include your 
+                order  and date that your order 
+                           was placed.</p>
+            <form class="contactform">
                 <fieldset>
-                 <legend>PERSONAL INFO</legend>
+                 <legend>CONTACT INFO</legend>
                  <div>
                  </div>
                  <label> First name </label>
                  <br> 
-                 <input type="text" placeholder="Enter your first name">
+                 <input type="text" placeholder=" First name">
+                 <div>
+                 </div><label> Surname</label>
+                 <br>
+                 <input type="text" placeholder="Surname">
+                 <div>
+                 </div> <label>Residence</label>
+                 <br>
+                 <input type="text" placeholder="Enter where you live">
                  <div>
                  </div>
-                    <label> Surname</label>
-                    <br>
-                    <input type="text" placeholder="Enter your surname">
-                    <div>
-                    </div>
-                        <label> Gender</label>
-                        <br>
-                        <input type="text" placeholder="Specify whether M/F">
-                        <div>
-                        </div>
-                            <label>Date of Birth</label>
-                            <br>
-                            <input type="date" >
-                            <div>
-                            </div>
-                                <label>Age</label>
-                                <br>
-                                <input type="number">
-                                <div>
-                                </div>
-                        <label>Residence</label>
-                        <br>
-                        <input type="text">
-                        <div>
-                        </div>
-                        <label>Ocupation</label>
-                        <br>
-                        <input type="text">
-                        <div>
-                        </div>
-                        <button id="submit">Submit</button>
+                 <label>Order</label>
+                 <br>
+                 <input type="text" placeholder="Enter what you ordered">
+                 <br>
+                 <label>Date</label>
+                 <br>
+                 <input type="date" placeholder="Enter the date order was placed">
+                 <br>
+                 <Label>Phone</Label>
+                 <br>
+                 <input type="number"  placeholder=" Active phone number">
+                 <br>
+                 <button id="submit">Submit</button>
                 </fieldset>
             </form>
-           
-         </ul>
-    </body>     
+            <footer>
+                <div id="site-footer">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-snapchat"></i> 
+                </div>
+                <p class="copyright-section">&copy; 2025 <span>MJ's Wigs</span> Designed by<span>Maya</span>. All rights reserved.</p>
+            </footer>
+</body>
 </html>
